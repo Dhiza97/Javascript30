@@ -1,0 +1,86 @@
+html {
+    /* background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5); */
+    /* background-size: cover; */
+    text-align: center;
+    font-size: 10px;
+  }
+
+  body {
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  img {
+    position: absolute;
+    width: 1450px;
+    height: fit-content;
+  }
+
+  .clock {
+    width: 30rem;
+    height: 30rem;
+    border: 20px solid white;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+    box-shadow:
+      0 0 0 4px rgba(0,0,0,0.1),
+      inset 0 0 0 3px #EFEFEF,
+      inset 0 0 10px black,
+      0 0 10px rgba(0,0,0,0.2);
+  }
+
+  .clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); /* account for the height of the clock hands */
+  }
+
+  .hand {
+    width: 50%;
+    height: 6px;
+    background: rgb(129, 21, 21);
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  }
+
+  .number {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: rgb(117, 116, 116);
+    font-size: 1.5rem;
+  }
+
+  #num12 { top: 5%; left: 50%; }
+  #num1 { top: 12%; left: 73%; }
+  #num2 { top: 28%; left: 89%; }
+  #num3 { top: 50%; left: 94%; }
+  #num4 { top: 70%; left: 90%; }
+  #num5 { bottom: 5%; left: 72%; }
+  #num6 { bottom: -2%; left: 50%; }
+  #num7 { bottom: 5%; right: 72%; }
+  #num8 { top: 70%; left: 10%; }
+  #num9 { bottom: 44%; left: 5%; }
+  #num10 { top: 28%; left: 10%; }
+  #num11 { top: 12%; left: 22%; }
+
+  #digital-clock {
+    position: absolute;
+    bottom: 10%;
+    right: 40%;
+    font-size: 6rem;
+    font-weight: 500;
+    color: white;
+    margin-top: 20px;
+  }
