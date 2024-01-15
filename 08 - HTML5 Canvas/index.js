@@ -43,7 +43,7 @@ const canvas = document.querySelector('#draw')
       hue = 0
     }
 
-    if(ctx.lineWidth >= 30 || ctx.lineWidth <= 1) {
+    if(ctx.lineWidth >= 100 || ctx.lineWidth <= 1) {
       direction = !direction
     }
 
