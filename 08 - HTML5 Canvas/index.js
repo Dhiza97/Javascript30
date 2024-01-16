@@ -3,10 +3,8 @@ const canvas = document.querySelector('#draw')
   canvas.width = window.innerWidth
   canvas.height = window.innerHeight
   ctx.strokeStyle = '#BADASS'
-//   ctx.lineJoin = 'round'
-//   ctx.lineCap = 'round'
   ctx.lineWidth = 10
-  ctx.globalCompositeOperation = 'source-over'
+//   ctx.globalCompositeOperation = 'lighter'
 
   const lineCapValues = ['square','butt', 'round'];
   const lineJoinValues = ['miter', 'bevel', 'round'];
