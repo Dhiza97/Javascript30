@@ -1,6 +1,8 @@
   const hero = document.querySelector('.hero')
   const text = document.querySelector('h1')
   const walk = 400
+  const textArray = ['WOAH!🔥🔥', 'Colorful', 'Text', 'Shadows! 🤯']
+  let textIndex = 0
 
   function shadow(e) {
     const { offsetWidth: width, offsetHeight: height } = hero
@@ -22,4 +24,11 @@
     `
   }
 
+  function changeText() {
+    text.textContent = textArray[textIndex]
+    textIndex = (textIndex + 1) % textArray.length
+  }
+
   hero/addEventListener('mousemove', shadow)
+
+  setInterval(changeText, 3000)
