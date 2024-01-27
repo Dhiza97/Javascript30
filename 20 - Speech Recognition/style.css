@@ -5,11 +5,12 @@ html {
 body {
     background: linear-gradient(130deg,#342a,#698798,#543cb8,#360d63,#a9703a,#258edf);
     background-size: 360% 360%;
+    background-repeat: no-repeat;
     animation: gradient-animation 24s ease infinite;
-    object-fit: contain;
     font-family: 'helvetica neue';
     font-weight: 200;
     font-size: 20px;
+    height: 100vh;
 }
 
 @keyframes gradient-animation {
