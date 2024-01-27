@@ -8,14 +8,50 @@ html {
   
   html {
     font-size: 10px;
-    background: #ffc600;
+    background: linear-gradient(285deg,blue,#080808,#ff0000,#f9f9f9);
+    background-size: 240% 240%;
+    animation: gradient-animation 12s ease infinite;
+  }
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: transparent;
+  }
+
+  button {
+    height: 40px;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+
+  .take-photo {
+    color: #f9f9f9;
+    background: black;
   }
   
   .photobooth {
     background: white;
-    max-width: 150rem;
-    margin: 2rem auto;
-    border-radius: 2px;
+    max-width: 100rem;
+    height: 10rem;
+    margin: 1rem auto;
+    border-radius: 10px;
   }
   
   /*clearfix*/
