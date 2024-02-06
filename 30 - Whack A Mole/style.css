@@ -20,6 +20,34 @@ h1 {
     line-height: 1;
     margin-bottom: 0;
 }
+
+.start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.start .start-game {
+    background-color: #744c03;
+    color: #ffc600;
+    padding: 10px 30px;
+    margin-top: 30px;
+    font-size: 1.9em;
+    border-radius: 22px;
+    border: 1px solid brown;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.start .start-game:hover {
+    background-color: #ffc600;
+    color: #744c03;
+}
+
+.start h2 {
+    font-size: 4rem;
+}
   
 .score {
     background: rgba(255,255,255,0.2);
@@ -66,4 +94,25 @@ h1 {
   
 .hole.up .mole {
     top: 0;
+}
+
+.records {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 4rem;
+    padding: 20px;
+    text-align: center;
+}
+
+.records h2 {
+    margin: 55px 0 0;
+}
+
+table, th, tbody {
+    border: 1px solid #744c03;
+    background-color: green;
+    width: 300px;
+    color: white;
 }
